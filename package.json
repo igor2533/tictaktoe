@@ -5,6 +5,10 @@
   "engines": {
     "node": "14.x"
   },
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.18.1",
