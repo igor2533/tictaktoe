@@ -7,7 +7,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node run.js"
   },
   "dependencies": {
     "express": "^4.17.1",
