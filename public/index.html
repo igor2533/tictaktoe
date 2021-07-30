@@ -1,0 +1,203 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Крестики-нолики</title>
+		<link href="../../assets/css/style.css" rel="stylesheet">
+		<link href="../../assets/css/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="../../assets/js/plugins/vendor/popper.min.js"></script>
+		<script src="../../assets/js/plugins/bootstrap/bootstrap.min.js"></script>
+		<script src="../../assets/js/plugins/vendor/holder.min.js"></script>
+		<script src="../../assets/js/scripts.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/multiple-select-tags-replacement/jquery-multi-select.css" >
+
+<script src="https://www.jqueryscript.net/demo/multiple-select-tags-replacement/jquery-multi-select.js"></script>
+
+<style>div#lists_r>div {
+    float: left;
+}
+div#lists_r {
+    float: left;
+}
+.container.filter-buttons {
+    float: left;
+}
+.container.create-rooms {
+    float: left;
+}
+.container.games-block {
+    float: left;
+}
+.container.games-block {
+    min-height: 78px;
+}
+.container.filter-buttons button {
+    margin: 7px;
+}
+div#lists_r {
+    padding-top: 84px;
+}
+button.btn.addts.btn-danger {
+    float: left;
+    margin-left: 10px;
+	margin-right: 20px;
+}
+.col-sm-3.filter {
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    margin: 7px;
+    background: #d2f6a8;
+}
+.col-sm-3.filter img {
+    width: 100%;
+    margin-top: 12px;
+    border: solid 1px white;
+}
+.m--s-ipt {
+        width: 100%;
+}
+.container.col-sm-12.games-block>div {
+    float: left;
+}
+.container.filter-buttons {
+    padding-bottom: 27px;
+}
+.m--s-list {
+    max-height: 40px;
+}
+.square {
+   
+    background: #ffc107;
+ 
+    transition: cubic-bezier(0.14, 1.48, 1, 1) 0.3s;
+    color: #0f1c61;
+}
+
+@media(min-width: 720px){
+.square {
+    font-size: 94px;
+}}
+
+#modal-content {
+   
+    background-color: #f44336;
+}
+
+@media(max-width:770px) {
+	.m--s-ipt {
+    position: relative;}
+	.col-sm-6.buty {
+    text-align: center;
+    padding-top: 20px;
+}
+}
+
+</style>
+	</head>
+	<body>
+		<div class="main_block container">
+			
+			
+			<div class="col-sm-12">
+			
+				<div class="col-sm-12">
+				<h1>Tic toc toe</h1>
+					<p>Your ID: <span id="my-id"></span></p>
+				</div>
+			</div>
+			<div class="container filter-buttons">
+				<button class="btn btn-primary filter-button" data-filter="all">All</button>
+				<script>
+                
+
+
+				</script>
+				
+			
+			
+			</div>
+			
+
+		
+			<div class="container create-rooms"> </div> 
+						
+			<div class="container">
+			<div class="container col-sm-12 games-block"> 
+							
+				<div class="col-sm-6">
+				<div class="example"></div></div>
+				<div class="col-sm-6 buty"><button class="btn addts btn-danger">Add tag</button> <button class="btn btn-info" href="#" onclick="createRoom(); return false">Create room</button></div>
+						
+						</div>
+						</div>
+
+			<div  id="lists_r" class="col-sm-12">
+				<p class>Online games</p]>
+				<div id="games"></div>
+			
+			
+				
+			</div>
+
+
+
+				
+			
+			<div id="game_block" style="display:none">
+			<span>Вы: </span><span id="play_for"></span><br>
+				<h6 class="mb-0 lh-100 text-center" id="status_game"></h6><br>
+				<div id="container">
+					<div id="board">
+						<div class="row" id="row_0">
+							<div class="square" id="0"></div>
+							<div class="square" id="1"></div>
+							<div class="square" id="2"></div>
+						</div>
+						<div class="row" id="row_1">
+							<div class="square" id="3"></div>
+							<div class="square" id="4"></div>
+							<div class="square" id="5"></div>
+						</div>
+						<div class="row" id="row_2">
+							<div class="square" id="6"></div>
+							<div class="square" id="7"></div>
+							<div class="square" id="8"></div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="my-3 p-3 bg-white rounded box-shadow" id="error_block" style="display:none">
+				Error
+			</div>
+			<div id="modal" style="display:none">
+				<div id="modal-content">
+					<div id="game-over-message">Game over</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+
+
+</html>
+
+<script>
+
+$(document).ready(function(){
+
+
+	// $('button.del-tag').onclick(function() {
+	// 	console.log('udaleno');
+	// 	//$(this).parent().remove(); 
+	// });
+
+	
+
+
+
+});
+</script>
